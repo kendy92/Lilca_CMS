@@ -1,0 +1,182 @@
+/* VARIABLE */
+@header-bg-color: #F5AE40;
+
+@body-bg-color: #F1F1F1;
+@body-text-color: #333;
+@font-base: 'Montserrat', sans-serif;
+@font-size-base: 1rem;
+@font-color: #fff;
+
+@heading-bg-color: #363636;
+@h1-font-size: 2rem;
+@h2-font-size: 1.5rem;
+
+@login-bg-color: #336B85;
+@login-text-color:#fff;
+@content-bg-color: #525252;
+@dashboard-bg-color: #3C3C3C;
+@dashboard-icon-color: #8a8a8a;
+@dashboard-item-color: rgba(255,255,255,.75);
+@dashboard-item-hover-bg-color: rgba(0,0,0,.1);
+
+@footer-bg-color: #303030;
+
+
+
+/* MIXING */
+.border-radius(@radius){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.transition(@transition){
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+.reset{
+    margin:0;
+    padding:0;
+}
+
+/* INDEX PAGE STYLE */
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    font-family: @font-base;
+    font-size: @font-size-base;
+    line-height: 1.5em;
+    padding:2em;
+    color: @body-text-color;
+    background-color: @body-bg-color;
+    .reset;
+}
+
+main{
+    
+    .login-page{
+        margin-top:2em;
+    }
+    
+    form#loginFrm{
+        background-color: @login-bg-color;
+        color: @login-text-color;
+        padding:1em;
+        .border-radius(10px);
+    }
+}
+
+footer{
+    text-align:center;
+    margin-top:1em;
+    font-weight: 600;
+}
+
+/* CMS PAGE STYLE */
+#wrap-container{
+    background-color: @content-bg-color;
+    color: @font-color;
+    header{
+        padding:1em;
+        background-color: @header-bg-color;
+        
+        & h1{
+          font-size: @h1-font-size; 
+        }
+        
+        & .profile-pic{
+            width: 40px;
+            display:none;
+        }
+    }
+    
+    main{
+        
+        #dashboard{
+            background-color: @dashboard-bg-color;
+            color: @font-color;
+            padding:1em;
+            
+            & h2{
+                background-color: @heading-bg-color;
+                display:block;
+                padding:1em;
+                font-size: @h2-font-size;
+            }
+            ul.dashboard-menu{
+                list-style-type: none;
+                padding:0;
+                
+                & li a{
+                    display:block;
+                    width: 100%;
+                    padding:1em;
+                    margin-bottom: .5em;
+                    color: @dashboard-item-color;
+                    .transition(all .5s ease);
+                    
+                    &:hover{
+                        text-decoration: none;
+                        background-color: @dashboard-item-hover-bg-color;
+                        color: @font-color;
+                    }
+                }
+                
+                & li > ul{
+                    display:none;
+                }
+                
+            }
+        }
+        
+        .content{
+            background-color: @content-bg-color;
+            color: @font-color;
+            padding:1em;
+            text-align:justify;
+        }
+        
+    }
+    
+    .footer{
+        position: sticky;
+        z-index:999;
+        bottom:0;
+        text-align: left;
+        background-color: @footer-bg-color;
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 2px;
+        padding-left:1em;
+    }
+    
+    .actionBtn{
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 9999;
+    right:10px;
+        & button:hover{
+            background-color:darken(#fff,60%);
+            color:#fff;
+            cursor: pointer;
+            
+        }
+    }
+    
+    .actionBtn .btn{
+       margin-right:10px;
+    }
+    
+}

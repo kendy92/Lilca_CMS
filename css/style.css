@@ -1,0 +1,110 @@
+/* VARIABLE */
+/* MIXING */
+.reset {
+  margin: 0;
+  padding: 0;
+}
+/* INDEX PAGE STYLE */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  padding: 2em;
+  color: #333333;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+main .login-page {
+  margin-top: 2em;
+}
+main form#loginFrm {
+  background-color: #336b85;
+  color: #ffffff;
+  padding: 1em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+table.details thead tr td{
+  text-transform: uppercase;
+  font-weight:bold;
+}
+footer {
+  text-align: center;
+  margin-top: 1em;
+  font-weight: 600;
+}
+/* CMS PAGE STYLE */
+#wrap-container {
+  background-color: #525252;
+  color: #ffffff;
+}
+#wrap-container header {
+  padding: 1em;
+  background-color: #f5ae40;
+}
+#wrap-container header h1 {
+  font-size: 2rem;
+}
+#wrap-container header .profile-pic {
+  width: 40px;
+  display: none;
+}
+#wrap-container main #dashboard {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  padding: 1em;
+}
+#wrap-container main #dashboard h2 {
+  background-color: #363636;
+  display: block;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+#wrap-container main #dashboard ul.dashboard-menu {
+  list-style-type: none;
+  padding: 0;
+}
+#wrap-container main #dashboard ul.dashboard-menu li a {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: .5em;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrap-container main #dashboard ul.dashboard-menu li a:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+#wrap-container main #dashboard ul.dashboard-menu li > ul {
+  display: none;
+}
+#wrap-container main .content {
+  background-color: #525252;
+  color: #ffffff;
+  padding: 1em;
+  text-align: justify;
+}
+#wrap-container .footer {
+  background-color: #303030;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 2px;
+}

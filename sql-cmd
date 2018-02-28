@@ -1,0 +1,7 @@
+--get all columns name from table
+
+SELECT column_name FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name='".$table_name."' ORDER BY ordinal_position;
+
+--get all tables name from DB
+
+SHOW TABLES FROM db_name
