@@ -15,6 +15,6 @@ CMS Framework which allows you to quickly do CRUD to your Database right in the 
 + It is user-friendly to use and fully responsive
 + It is highly secured and anti SQL injection
 
-THIS FRAMEWORK IS FREE OF USE, PLEASE CREDIT TO LILCASOFT.INFO. 
+THIS FRAMEWORK IS FREE OF USE, PLEASE CREDIT TO **LILCASOFT.INFO**. 
 
 ALL THE BEST!!!
